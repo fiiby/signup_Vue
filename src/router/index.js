@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import SignupView from '../views/SignupView.vue';
 import LoginView from '../views/LoginView.vue';
 import ResetPasswordView from '../views/ResetPasswordView.vue';
-
+import LogoutView from "../views/LogoutView.vue";
 
 
 const router = createRouter({
@@ -36,6 +36,11 @@ const router = createRouter({
     path: '/reset-password',
     name: 'reset-password',
     component: ResetPasswordView
+  },
+  {
+    path: '/logout',
+    name: 'logout',
+    component: LogoutView
   },
 
   ]

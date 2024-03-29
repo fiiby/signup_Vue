@@ -8,6 +8,7 @@
     <RouterLink to="/" class="nav-item">Home</RouterLink>
         <RouterLink to="/Login" class="nav-item">Login</RouterLink>
         <RouterLink to="/Signup" class="nav-item">Signup</RouterLink> 
+        <RouterLink to="/Logout" class="nav-item"> Logout</RouterLink>
       
  <routerView></routerView> 
  </div>

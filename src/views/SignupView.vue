@@ -18,10 +18,10 @@ const signup = async () => {
     });
     console.log('Signup successful:', response.data);
 
-    // Clear input fields after successful signup
-    // username = '',
-    // email = '',
-    // password= '';
+    //Clear input fields after successful signup
+    username.value = '',
+    email.value = '',
+    password.value= '';
 
     // Redirect to login page after successful signup
     router.push('/login');
@@ -47,8 +47,9 @@ const signup = async () => {
             <input type="email" placeholder="Enter email" v-model="email">
             <input type="password" placeholder="Enter password" v-model="password">
             <input type="submit" value="Sign Up">
+            <p>{{ username }}</p>
           </form>
-           <!-- <p>{{ username }}</p> -->
+         
         </div>
        
         </main>
