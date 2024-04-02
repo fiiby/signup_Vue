@@ -11,7 +11,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
@@ -24,5 +26,9 @@
     "eslint-plugin-vue": "^9.17.0",
     "prettier": "^3.0.3",
     "vite": "^5.1.5"
-  }
+  },
+  "description": "This template should help get you started developing with Vue 3 in Vite.",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
 }

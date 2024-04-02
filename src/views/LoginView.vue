@@ -23,10 +23,11 @@ const login = async () => {
     // Optionally, you can handle the error (e.g., display a message to the user)
   }
 
-const resetPassword = () => {
-  // Logic for handling forgot password functionality (e.g., redirecting to a password reset page)
-  console.log("reset Password");
-}
+// const forgot = () => {
+//   // Logic for handling forgot password functionality (e.g., redirecting to a password reset page)
+//   console.log("forgot Password");
+//}
+
 };
 </script>
 
@@ -50,7 +51,7 @@ const resetPassword = () => {
   
       <footer>
         <p>Not have an account?Regisetr here <a href="Signup">Signup</a></p>
-        <p><a class="dot"  href="ResetPassword" @click.prevent="resetPassword">Forgot Password?</a></p>
+        <p><a  href="Forgot"  class="dot"  @click.prevent="forgot">Forgot Password?</a></p>
 
       </footer>
     </div>
@@ -59,12 +60,12 @@ const resetPassword = () => {
 
 <style scoped>
 /* General Styles */
-body {
-  display: flex;
-  flex-direction: row;
+/* body {
+  /* display: flex; */
+  /* flex-direction: row; 
   margin: 5px;
   font-family: Arial, sans-serif;
-}
+} */
 
 .login {
   display: flex;
@@ -72,7 +73,7 @@ body {
   /* min-height: 100vh; */
   justify-items: center;
     padding-top: 100px;
-    margin-right: 300px;
+    margin-right: 700px;   /* this was 400 */
     min-height: 200vh;
     /* min-width: 50vh; */
   } 

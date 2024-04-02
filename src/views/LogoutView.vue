@@ -2,21 +2,28 @@
 
 </script>
 <template>
-     <h1 class="logout">
-  logout  page
-  </h1>
+  <body>
+    <div>
+    <h3 class="logout">
+  logout  page.. come again!
+  </h3>
+  </div>
+    
+</body>
+
 </template>
 
 
 
 
 <style scoped>
-@media (min-width: 1024px) {
+/* // @media (min-width: 1024px) { */
   .logout {
-    min-height: 100vh;
+    
     display: flex;
-    align-items: center;
-  }
-}
+    flex-direction: row;
+    justify-items: center;
+  } 
+
 
 </style>

@@ -6,7 +6,7 @@
   
       <main>
         <div class="form-container">
-          <form @submit.prevent="resetPassword">
+          <form @submit.prevent="forgot">
             <input type="email" placeholder="Enter your email" v-model="email">
             <input type="submit" value="ResetPassword">
           </form>
@@ -21,12 +21,16 @@
   
   <script setup>
   import { ref } from 'vue';
+  import axios from 'axios';
   
   const email = ref('');
   
-  const resetPassword = async () => {
-    console.log(`Reset password requested for email: ${email.value}`);
+  const forgot = async () => {
     // Add logic to handle password reset here (e.g., send a reset email)
+  await axios.post("forgot", {
+    email: this.email
+  })
+  console.log(`Reset password requested for email: ${email.value}`);
   };
   </script>
   

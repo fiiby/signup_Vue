@@ -75,7 +75,7 @@ const signup = async () => {
     flex-direction: column;
     justify-items: center;
     padding-top: 100px;
-    margin-right: 400px;
+    margin-right: 700px;  /* this was 400 */
     min-height: 200vh;
     min-width: 50vh;
     } 
